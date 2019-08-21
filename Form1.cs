@@ -66,7 +66,7 @@ namespace ProfileBuster2 {
         private void ButtonGetProfiles_Click(object sender, EventArgs e) {
             LabelTextReadout.Text = "Searching for serial number " + SerialNumber + "....";
             SerialNumber = TextBoxSerialNumberInput.Text;
-            
+            //LOG Who requested what serial number?
             // Populate our ListView
             GetProfileList();
         }
@@ -172,10 +172,9 @@ namespace ProfileBuster2 {
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void ButtonBurnIt_Click(object sender, EventArgs e) {
-            Console.WriteLine("Burning it!");
-            LabelTextReadout.Text = "Burning it!";
+            //Console.WriteLine("Burning it!");
+            //LabelTextReadout.Text = "Deleting profiles";
             foreach (ListViewItem item in ListViewProfiles.CheckedItems) {
-
                 Console.WriteLine("deleting C:\\users\\" + item.Text);
                 LabelTextReadout.Text = "Deleting C:\\users\\" + item.Text + "....";
                 string[] files = Directory.GetDirectories(@"\\" + SerialNumber + @"\C$\Users");
@@ -212,6 +211,7 @@ namespace ProfileBuster2 {
                         }
                     }
                 }
+                //LOG Who deleted which profile from what serial number?
 
                 // This code doesn't appear to work.  When getting to folders like Cookies and Nethood, it errors out.
                 // No amount of checking or setting permissions appears to work.
