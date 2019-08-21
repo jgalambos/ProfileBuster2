@@ -142,8 +142,10 @@ namespace ProfileBuster2 {
                 LabelTextReadout.Text = "Data gathered. Printing to screen...";
             } catch (IOException) {
                 LabelTextReadout.Text = "No network path found. Are you sure you typed it properly?";
+                return;
             } catch (UnauthorizedAccessException) {
                 LabelTextReadout.Text = "Encountered that weird permissions issue that I can't seem to fix. Gonna have to do this manually. Sorry.";
+                return;
             }
 
             // Finally, add all data we found to our main List View (ListViewProfiles)
