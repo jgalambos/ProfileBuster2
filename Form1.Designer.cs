@@ -171,9 +171,10 @@
       // LabelTextReadout
       // 
       this.LabelTextReadout.AutoSize = true;
+      this.LabelTextReadout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.LabelTextReadout.Location = new System.Drawing.Point(4, 17);
       this.LabelTextReadout.Name = "LabelTextReadout";
-      this.LabelTextReadout.Size = new System.Drawing.Size(147, 13);
+      this.LabelTextReadout.Size = new System.Drawing.Size(189, 16);
       this.LabelTextReadout.TabIndex = 0;
       this.LabelTextReadout.Text = "Status messages appear here";
       // 
