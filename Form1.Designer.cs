@@ -110,6 +110,7 @@
       this.ListViewProfiles.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ColumnProfiles,
             this.ColumnDateModified});
+      this.ListViewProfiles.HideSelection = false;
       this.ListViewProfiles.Location = new System.Drawing.Point(3, 3);
       this.ListViewProfiles.Name = "ListViewProfiles";
       this.ListViewProfiles.Size = new System.Drawing.Size(767, 294);
@@ -143,9 +144,9 @@
       // 
       this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
       this.panel1.Controls.Add(this.ButtonBurnIt);
-      this.panel1.Location = new System.Drawing.Point(647, 4);
+      this.panel1.Location = new System.Drawing.Point(547, 4);
       this.panel1.Name = "panel1";
-      this.panel1.Size = new System.Drawing.Size(126, 51);
+      this.panel1.Size = new System.Drawing.Size(226, 51);
       this.panel1.TabIndex = 2;
       // 
       // ButtonBurnIt
@@ -153,9 +154,9 @@
       this.ButtonBurnIt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.ButtonBurnIt.Location = new System.Drawing.Point(3, 0);
       this.ButtonBurnIt.Name = "ButtonBurnIt";
-      this.ButtonBurnIt.Size = new System.Drawing.Size(120, 48);
+      this.ButtonBurnIt.Size = new System.Drawing.Size(220, 48);
       this.ButtonBurnIt.TabIndex = 0;
-      this.ButtonBurnIt.Text = "Burn It!";
+      this.ButtonBurnIt.Text = "Delete Selected";
       this.ButtonBurnIt.UseVisualStyleBackColor = true;
       this.ButtonBurnIt.Click += new System.EventHandler(this.ButtonBurnIt_Click);
       // 
@@ -164,7 +165,7 @@
       this.PanelBottomText.Controls.Add(this.LabelTextReadout);
       this.PanelBottomText.Location = new System.Drawing.Point(4, 4);
       this.PanelBottomText.Name = "PanelBottomText";
-      this.PanelBottomText.Size = new System.Drawing.Size(634, 51);
+      this.PanelBottomText.Size = new System.Drawing.Size(536, 51);
       this.PanelBottomText.TabIndex = 1;
       // 
       // LabelTextReadout
@@ -172,9 +173,9 @@
       this.LabelTextReadout.AutoSize = true;
       this.LabelTextReadout.Location = new System.Drawing.Point(4, 17);
       this.LabelTextReadout.Name = "LabelTextReadout";
-      this.LabelTextReadout.Size = new System.Drawing.Size(96, 13);
+      this.LabelTextReadout.Size = new System.Drawing.Size(147, 13);
       this.LabelTextReadout.TabIndex = 0;
-      this.LabelTextReadout.Text = "Blood for Freedom!";
+      this.LabelTextReadout.Text = "Status messages appear here";
       // 
       // ProfileBusterMainForm
       // 
