@@ -10,10 +10,11 @@ using System.Windows.Forms;
 using System.IO;
 using Microsoft.Win32;
 using System.Text.RegularExpressions;
+using System.Reflection;
 
 namespace ProfileBuster2 {
     public partial class ProfileBusterMainForm : Form {
-
+        const string TITLE = "Profile Buster";
         /// <summary>
         /// List of Profiles with Date Modified and Orphaned properties.  Our main window picks up from this.
         /// </summary>
@@ -31,6 +32,7 @@ namespace ProfileBuster2 {
         /// </summary>
         public ProfileBusterMainForm() {
             InitializeComponent();
+            this.Text = string.Format("{0} v{1}", TITLE, Assembly.GetExecutingAssembly().GetName().Version.ToString());
             TextBoxSerialNumberInput.Text = Environment.MachineName;
             SerialNumber = Environment.MachineName;
             //Replace the following SNs for test beds if needed
@@ -242,6 +244,5 @@ namespace ProfileBuster2 {
             ListViewProfiles.Sort();
             ListViewProfiles.ListViewItemSorter = new ListViewColumnSorter(e.Column, ListViewProfiles.Sorting);
         }
-
-    }
+  }
 }
