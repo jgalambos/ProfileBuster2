@@ -72,6 +72,7 @@
       // 
       this.TextBoxSerialNumberInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+      this.TextBoxSerialNumberInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
       this.TextBoxSerialNumberInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.TextBoxSerialNumberInput.Location = new System.Drawing.Point(204, 4);
       this.TextBoxSerialNumberInput.Name = "TextBoxSerialNumberInput";

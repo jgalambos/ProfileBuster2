@@ -53,7 +53,7 @@ namespace ProfileBuster2 {
         /// <param name="e"></param>
         private void TextBoxSerialNumberInput_Leave(object sender, EventArgs e) {
             // Capitalize SN for readability
-            TextBoxSerialNumberInput.Text = TextBoxSerialNumberInput.Text.ToUpper();
+            //TextBoxSerialNumberInput.Text = TextBoxSerialNumberInput.Text.ToUpper();
             // Remove whitespace
             TextBoxSerialNumberInput.Text = Regex.Replace(TextBoxSerialNumberInput.Text, @"\s+", "");
         }
